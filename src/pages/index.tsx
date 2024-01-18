@@ -105,7 +105,7 @@ const Home: NextPage = () => {
       </div>
       {nextPage ? (
         <div className="flex flex-col items-center">
-          <div className="flex grid-cols-2 gap-2">
+          <div className={cn("lg:flex lg:grid-cols-2 gap-2")}>
             <div className="mt-12 flex flex-col items-center gap-1">
               <div className="flex items-center">
                 シナリオ：
@@ -130,7 +130,7 @@ const Home: NextPage = () => {
               </div>
             </div>
             <div>
-              <div className="flex items-center">
+              <div className="flex items-center justify-center max-lg:flex-col">
                 <Chart
                   chartType="ScatterChart"
                   height="320px"
